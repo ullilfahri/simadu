@@ -1,0 +1,18 @@
+[gammu]
+port = com1
+connection = at115200
+[gammu1]
+port = com2
+connection = at115200
+[gammu2]
+port = com3
+connection = at115200
+[gammu3]
+port = com2
+connection = at115200
+[gammu4]
+port = com3
+connection = at115200
+[gammu5]
+port = com4
+connection = at115200

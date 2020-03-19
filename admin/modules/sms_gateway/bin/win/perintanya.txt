@@ -1,0 +1,6 @@
+instal servis : Gammu-smsd -i -c smsdrc -n SLiMS_Gateway
+start service :	gammu-smsd -s -c smsdrc -n SLiMS_Gateway
+
+
+matikan servis : gammu-smsd -c smsdrc -k -n SLiMS_Gateway
+Hapus Servis: Gammu-smsd -n Modem_1 -u

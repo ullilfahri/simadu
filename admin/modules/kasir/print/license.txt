@@ -1,0 +1,100 @@
+DISCLAIMER OF WARRANTY
+-------------------------------------------
+THIS SOFTWARE IS SOLD "AS IS" AND WITHOUT WARRANTIES AS TO PERFORMANCE
+OF MERCHANTABILITY OR ANY OTHER WARRANTIES WHETHER EXPRESSED OR IMPLIED.
+
+BECAUSE OF THE VARIOUS HARDWARE AND SOFTWARE ENVIRONMENTS IN WHICH 
+THE PROGRAMS MAY BE USED, NO WARRANTY OF FITNESS FOR A PARTICULAR 
+PURPOSE IS OFFERED.
+
+THE USER MUST ASSUME THE ENTIRE RISK OF USING THE PROGRAMS. ANY 
+LIABILITY OF THE SELLER WILL BE LIMITED EXCLUSIVELY TO PRODUCT 
+REPLACEMENT OR REFUND OF PURCHASE PRICE.
+
+
+DOSPRINTER STANDARD LICENSE
+-------------------------------------------
+This license applies to the standard-licensed version of DOSPrinter.
+If you have an evaluation version (demo) of DOSPrinter, see
+the section below titled DOSPrinter Evaluation License.
+You should carefully read the following terms and conditions
+before using this software. Unless you have a different license
+agreement from Alternet software. Your use, distribution,
+or installation of this copy of DOSPrinter indicates your
+acceptance of this License.
+If you do not agree to any of the terms of this License, then do
+not install, distribute or use this copy of DOSPrinter.
+This copy of DOSPrinter may either be used by a single person who uses 
+the DOSPrinter personally on one or more computers, or installed
+on a single workstation used nonsimultaneously by multiple
+people, but not both. This is not a concurrent use license.
+You may access this copy through a network, provided that you
+have obtained an individual DOSPrinter license for each workstation
+that will access DOSPrinter through the network. For instance, if 8
+different workstations will access DOSPrinter on the network, each
+workstation must have its own DOSPrinter license, regardless of
+whether they use DOSPrinter at different times or concurrently.
+You may not modify, translate, reverse engineer, decompile, disassemble
+or create derivative works based on DOSPrinter.
+You may not make access to DOSPrinter available to others
+in connection with a service bureau, application service provider,
+or similar business, or use DOSPrinter in a business to provide 
+printing or conversion services to others. There are no third party
+beneficiaries of any promises, obligations or representations
+made by Alternet software herein.
+This Agreement is the complete statement of the Agreement between
+the parties on the subject matter, and merges and supersedes all
+other or prior understandings, purchase orders, agreements and
+arrangements.
+
+
+DOSPRINTER EVALUATION LICENSE
+-------------------------------------------
+This license applies to the evaluation version of DOSPrinter. If you
+do not have an evaluation version of DOSPrinter, see the section
+above titled DOSPrinter Standard License.
+By using, copying, transmitting, distributing or installing
+DOSPrinter, you agree to all of the terms of this License. If you do
+not agree to any of the terms of this License, then do not use,
+copy, transmit, distribute, or install DOSPrinter.
+This is not free software. Subject to the terms below, you are
+hereby licensed by Alternet software to use this software for 
+evaluation purposes without charge for a period of 30 days.
+If you use this software after the 30 day evaluation period 
+a registration fee of US$40 is required. Contact the author 
+about payment methods.
+Unregistered use of DOSPrinter after the 30-day evaluation period
+is in violation of copyright laws.
+You may not rent, lease, modify, translate, reverse engineer,
+decompile, disassemble or create derivative works based on 
+DOSPrinter. You may not make access to DOSPrinter available to others
+in connection with a service bureau, application service provider,
+or similar business, or use DOSPrinter in a business to provide 
+printing or conversion services to others. There are no third party
+beneficiaries of any promises, obligations or representations
+made by Alternet software herein.
+This Agreement is the complete statement of the Agreement between
+the parties on the subject matter, and merges and supersedes all
+other or prior understandings, purchase orders, agreements and
+arrangements.
+
+
+DISTRIBUTION
+-------------------------------------------
+The latest release will always be available at:
+http://www.dosprinter.net
+
+
+COPYRIGHT INFORMATION
+-------------------------------------------
+DOSPrinter (c)2002-2018 Alternet software.
+
+
+CONTACT
+-------------------------------------------
+bojan.banko@pu.htnet.hr
+Adress:
+Bojan Banko
+Rocka 4
+Porec 52440
+Croatia

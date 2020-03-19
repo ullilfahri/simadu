@@ -1,0 +1,67 @@
+These Windows services are started:
+
+   ##Id_String1.6844F930_1628_4223_B5CC_5BB94B879762##
+   AnyDesk Service
+   Background Intelligent Transfer Service
+   Background Tasks Infrastructure Service
+   Base Filtering Engine
+   CDROM_Detect
+   CloudBerry Remote Assistant Service
+   CNG Key Isolation
+   COM+ Event System
+   COM+ System Application
+   Cryptographic Services
+   DCOM Server Process Launcher
+   Dell Client Management Service
+   Dell Data Vault Processor
+   Dell Hardware Support
+   Dell SupportAssist
+   DHCP Client
+   Diagnostic Policy Service
+   Diagnostics Tracking Service
+   Distributed Link Tracking Client
+   Distributed Transaction Coordinator
+   DNS Client
+   Group Policy Client
+   Human Interface Device Service
+   IKE and AuthIP IPsec Keying Modules
+   Intel(R) Dynamic Application Loader Host Interface Service
+   Intel(R) HD Graphics Control Panel Service
+   Intel(R) Management and Security Application Local Management Service
+   IP Helper
+   IPsec Policy Agent
+   IP??????
+   Local Session Manager
+   Network List Service
+   Network Location Awareness
+   Network Store Interface Service
+   Performance Logs & Alerts
+   Plug and Play
+   postgresql-x64-9.5 - PostgreSQL Server 9.5
+   Power
+   Print Spooler
+   Remote Procedure Call (RPC)
+   RPC Endpoint Mapper
+   Security Accounts Manager
+   Server
+   Shell Hardware Detection
+   System Event Notification Service
+   System Events Broker
+   Task Scheduler
+   TCP/IP NetBIOS Helper
+   TeamViewer
+   Themes
+   User Access Logging Service
+   User Profile Service
+   Windows Connection Manager
+   Windows Event Log
+   Windows Firewall
+   Windows Font Cache Service
+   Windows Management Instrumentation
+   Windows Remote Management (WS-Management)
+   WinHTTP Web Proxy Auto-Discovery Service
+   WLAN AutoConfig
+   Workstation
+
+The command completed successfully.
+

@@ -1,0 +1,1 @@
+gammu 2 getussd *123*2#

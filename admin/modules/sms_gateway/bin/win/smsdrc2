@@ -1,0 +1,20 @@
+[gammu]
+port = com2
+connection = at115200
+[smsd]
+service = SQL
+Driver = native_mysql
+logfile = D:\SI'AKO\root\SIAKO\admin\modules\sms_gateway\bin/win/logsmsdrc2
+debuglevel = 1
+phoneid = Modem_2
+commtimeout = 15
+sendtimeout = 30
+ReceiveFrequency = 15
+send = yes
+receive = yes
+checksecurity = 0
+RunOnReceive = D:\SI'AKO\root\SIAKO\admin\modules\sms_gateway\bin/win/daemon.bat
+pc = localhost
+user = root
+password = siako
+database = siako

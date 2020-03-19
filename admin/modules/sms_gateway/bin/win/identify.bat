@@ -1,0 +1,1 @@
+gammu 0 identify

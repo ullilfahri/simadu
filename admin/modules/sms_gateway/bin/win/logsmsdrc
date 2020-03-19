@@ -1,0 +1,475 @@
+<center><h4>SIMPADA SMS AUTOMATION SYSTEM</h4></center>Sat 2018/02/03 14:26:47 gammu-smsd[3940]: Using SQL service
+Sat 2018/02/03 14:26:47 gammu-smsd[3940]: Configuring Gammu SMSD...
+Sat 2018/02/03 14:26:47 gammu-smsd[3940]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sat 2018/02/03 14:26:47 gammu-smsd[3940]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sat 2018/02/03 14:26:47 gammu-smsd[3940]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sat 2018/02/03 14:26:47 gammu-smsd[3940]: mode: Send=1, Receive=1
+Sat 2018/02/03 14:26:47 gammu-smsd[3940]: deliveryreport = no
+Sat 2018/02/03 14:26:47 gammu-smsd[3940]: phoneid = Modem_1
+Sat 2018/02/03 14:26:47 gammu-smsd[3940]: Connected to Database: simpada_kpu on localhost
+Sat 2018/02/03 14:26:47 gammu-smsd[3940]: Database structures version: 13, SMSD current version: 13
+Sat 2018/02/03 14:26:47 gammu-smsd[3940]: Connected to Database native_mysql: simpada_kpu on localhost
+Sat 2018/02/03 14:26:47 gammu-smsd[3940]: Created Windows RW shared memory at 002E0000
+Sat 2018/02/03 14:26:47 gammu-smsd[3940]: Starting phone communication...
+Sat 2018/02/03 14:26:55 gammu-smsd[3940]: Inserting phone info
+Sat 2018/02/03 15:48:12 gammu-smsd[3940]: Error code: 2006, Error: MySQL server has gone away
+Sat 2018/02/03 15:48:12 gammu-smsd[3940]: SQL failed (timeout): SELECT `ID`, `InsertIntoDB`, `SendingDateTime`, `SenderID` FROM outbox WHERE `SendingDateTime` < NOW() AND `SendingTimeOut` < NOW() AND `SendBefore` >= CURTIME() AND `SendAfter` <= CURTIME() AND ( `SenderID` is NULL OR `SenderID` = '' OR `SenderID` = 'Modem_1' ) ORDER BY `InsertIntoDB` ASC LIMIT 1
+Sat 2018/02/03 15:48:12 gammu-smsd[3940]: reconnecting to database!
+Sat 2018/02/03 15:48:12 gammu-smsd[3940]: Reconnecting after 1 seconds...
+Sat 2018/02/03 15:48:14 gammu-smsd[3940]: Error connecting to database!
+Sat 2018/02/03 15:48:14 gammu-smsd[3940]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sat 2018/02/03 15:48:14 gammu-smsd[3940]: Reconnecting after 4 seconds...
+Sat 2018/02/03 15:48:19 gammu-smsd[3940]: Error connecting to database!
+Sat 2018/02/03 15:48:19 gammu-smsd[3940]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sat 2018/02/03 15:48:19 gammu-smsd[3940]: Reconnecting after 9 seconds...
+Sat 2018/02/03 15:48:29 gammu-smsd[3940]: Error connecting to database!
+Sat 2018/02/03 15:48:29 gammu-smsd[3940]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sat 2018/02/03 15:48:29 gammu-smsd[3940]: Reconnecting after 16 seconds...
+Sat 2018/02/03 15:48:46 gammu-smsd[3940]: Error connecting to database!
+Sat 2018/02/03 15:48:46 gammu-smsd[3940]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sat 2018/02/03 15:48:46 gammu-smsd[3940]: Reconnecting after 25 seconds...
+Sat 2018/02/03 16:01:13 gammu-smsd[1712]: Using SQL service
+Sat 2018/02/03 16:01:13 gammu-smsd[1712]: Configuring Gammu SMSD...
+Sat 2018/02/03 16:01:13 gammu-smsd[1712]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sat 2018/02/03 16:01:13 gammu-smsd[1712]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sat 2018/02/03 16:01:13 gammu-smsd[1712]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sat 2018/02/03 16:01:13 gammu-smsd[1712]: mode: Send=1, Receive=1
+Sat 2018/02/03 16:01:13 gammu-smsd[1712]: deliveryreport = no
+Sat 2018/02/03 16:01:13 gammu-smsd[1712]: phoneid = Modem_1
+Sat 2018/02/03 16:01:17 gammu-smsd[1712]: Error connecting to database!
+Sat 2018/02/03 16:01:17 gammu-smsd[1712]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sat 2018/02/03 16:01:17 gammu-smsd[1712]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sat 2018/02/03 20:53:23 gammu-smsd[1320]: Using SQL service
+Sat 2018/02/03 20:53:23 gammu-smsd[1320]: Configuring Gammu SMSD...
+Sat 2018/02/03 20:53:23 gammu-smsd[1320]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sat 2018/02/03 20:53:23 gammu-smsd[1320]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sat 2018/02/03 20:53:23 gammu-smsd[1320]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sat 2018/02/03 20:53:23 gammu-smsd[1320]: mode: Send=1, Receive=1
+Sat 2018/02/03 20:53:23 gammu-smsd[1320]: deliveryreport = no
+Sat 2018/02/03 20:53:23 gammu-smsd[1320]: phoneid = Modem_1
+Sat 2018/02/03 20:53:25 gammu-smsd[1320]: Error connecting to database!
+Sat 2018/02/03 20:53:25 gammu-smsd[1320]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sat 2018/02/03 20:53:25 gammu-smsd[1320]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sat 2018/02/03 20:53:25 gammu-smsd[1320]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Sun 2018/02/04 09:10:14 gammu-smsd[1392]: Using SQL service
+Sun 2018/02/04 09:10:14 gammu-smsd[1392]: Configuring Gammu SMSD...
+Sun 2018/02/04 09:10:14 gammu-smsd[1392]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sun 2018/02/04 09:10:14 gammu-smsd[1392]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sun 2018/02/04 09:10:14 gammu-smsd[1392]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sun 2018/02/04 09:10:14 gammu-smsd[1392]: mode: Send=1, Receive=1
+Sun 2018/02/04 09:10:14 gammu-smsd[1392]: deliveryreport = no
+Sun 2018/02/04 09:10:14 gammu-smsd[1392]: phoneid = Modem_1
+Sun 2018/02/04 09:10:16 gammu-smsd[1392]: Error connecting to database!
+Sun 2018/02/04 09:10:16 gammu-smsd[1392]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sun 2018/02/04 09:10:16 gammu-smsd[1392]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sun 2018/02/04 09:10:16 gammu-smsd[1392]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Sun 2018/02/04 18:36:49 gammu-smsd[1688]: Using SQL service
+Sun 2018/02/04 18:36:49 gammu-smsd[1688]: Configuring Gammu SMSD...
+Sun 2018/02/04 18:36:49 gammu-smsd[1688]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sun 2018/02/04 18:36:49 gammu-smsd[1688]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sun 2018/02/04 18:36:49 gammu-smsd[1688]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sun 2018/02/04 18:36:49 gammu-smsd[1688]: mode: Send=1, Receive=1
+Sun 2018/02/04 18:36:49 gammu-smsd[1688]: deliveryreport = no
+Sun 2018/02/04 18:36:49 gammu-smsd[1688]: phoneid = Modem_1
+Sun 2018/02/04 18:36:52 gammu-smsd[1688]: Error connecting to database!
+Sun 2018/02/04 18:36:52 gammu-smsd[1688]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sun 2018/02/04 18:36:52 gammu-smsd[1688]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sun 2018/02/04 20:39:32 gammu-smsd[1428]: Using SQL service
+Sun 2018/02/04 20:39:32 gammu-smsd[1428]: Configuring Gammu SMSD...
+Sun 2018/02/04 20:39:32 gammu-smsd[1428]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sun 2018/02/04 20:39:32 gammu-smsd[1428]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sun 2018/02/04 20:39:32 gammu-smsd[1428]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sun 2018/02/04 20:39:32 gammu-smsd[1428]: mode: Send=1, Receive=1
+Sun 2018/02/04 20:39:32 gammu-smsd[1428]: deliveryreport = no
+Sun 2018/02/04 20:39:32 gammu-smsd[1428]: phoneid = Modem_1
+Sun 2018/02/04 20:39:34 gammu-smsd[1428]: Error connecting to database!
+Sun 2018/02/04 20:39:34 gammu-smsd[1428]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sun 2018/02/04 20:39:34 gammu-smsd[1428]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sun 2018/02/04 20:39:34 gammu-smsd[1428]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Mon 2018/02/05 18:40:49 gammu-smsd[1436]: Using SQL service
+Mon 2018/02/05 18:40:49 gammu-smsd[1436]: Configuring Gammu SMSD...
+Mon 2018/02/05 18:40:49 gammu-smsd[1436]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Mon 2018/02/05 18:40:49 gammu-smsd[1436]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Mon 2018/02/05 18:40:49 gammu-smsd[1436]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Mon 2018/02/05 18:40:49 gammu-smsd[1436]: mode: Send=1, Receive=1
+Mon 2018/02/05 18:40:49 gammu-smsd[1436]: deliveryreport = no
+Mon 2018/02/05 18:40:49 gammu-smsd[1436]: phoneid = Modem_1
+Mon 2018/02/05 18:40:52 gammu-smsd[1436]: Error connecting to database!
+Mon 2018/02/05 18:40:52 gammu-smsd[1436]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Mon 2018/02/05 18:40:52 gammu-smsd[1436]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Mon 2018/02/05 20:08:21 gammu-smsd[1428]: Using SQL service
+Mon 2018/02/05 20:08:21 gammu-smsd[1428]: Configuring Gammu SMSD...
+Mon 2018/02/05 20:08:21 gammu-smsd[1428]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Mon 2018/02/05 20:08:21 gammu-smsd[1428]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Mon 2018/02/05 20:08:21 gammu-smsd[1428]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Mon 2018/02/05 20:08:21 gammu-smsd[1428]: mode: Send=1, Receive=1
+Mon 2018/02/05 20:08:21 gammu-smsd[1428]: deliveryreport = no
+Mon 2018/02/05 20:08:21 gammu-smsd[1428]: phoneid = Modem_1
+Mon 2018/02/05 20:08:24 gammu-smsd[1428]: Error connecting to database!
+Mon 2018/02/05 20:08:24 gammu-smsd[1428]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Mon 2018/02/05 20:08:24 gammu-smsd[1428]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Tue 2018/02/06 07:00:54 gammu-smsd[1436]: Using SQL service
+Tue 2018/02/06 07:00:54 gammu-smsd[1436]: Configuring Gammu SMSD...
+Tue 2018/02/06 07:00:54 gammu-smsd[1436]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Tue 2018/02/06 07:00:54 gammu-smsd[1436]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Tue 2018/02/06 07:00:54 gammu-smsd[1436]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Tue 2018/02/06 07:00:54 gammu-smsd[1436]: mode: Send=1, Receive=1
+Tue 2018/02/06 07:00:54 gammu-smsd[1436]: deliveryreport = no
+Tue 2018/02/06 07:00:54 gammu-smsd[1436]: phoneid = Modem_1
+Tue 2018/02/06 07:00:55 gammu-smsd[1436]: Error connecting to database!
+Tue 2018/02/06 07:00:55 gammu-smsd[1436]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Tue 2018/02/06 07:00:55 gammu-smsd[1436]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Tue 2018/02/06 19:05:20 gammu-smsd[1432]: Using SQL service
+Tue 2018/02/06 19:05:20 gammu-smsd[1432]: Configuring Gammu SMSD...
+Tue 2018/02/06 19:05:20 gammu-smsd[1432]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Tue 2018/02/06 19:05:20 gammu-smsd[1432]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Tue 2018/02/06 19:05:20 gammu-smsd[1432]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Tue 2018/02/06 19:05:20 gammu-smsd[1432]: mode: Send=1, Receive=1
+Tue 2018/02/06 19:05:20 gammu-smsd[1432]: deliveryreport = no
+Tue 2018/02/06 19:05:20 gammu-smsd[1432]: phoneid = Modem_1
+Tue 2018/02/06 19:05:21 gammu-smsd[1432]: Error connecting to database!
+Tue 2018/02/06 19:05:21 gammu-smsd[1432]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Tue 2018/02/06 19:05:21 gammu-smsd[1432]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Wed 2018/02/07 07:27:08 gammu-smsd[1444]: Using SQL service
+Wed 2018/02/07 07:27:08 gammu-smsd[1444]: Configuring Gammu SMSD...
+Wed 2018/02/07 07:27:08 gammu-smsd[1444]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Wed 2018/02/07 07:27:08 gammu-smsd[1444]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Wed 2018/02/07 07:27:08 gammu-smsd[1444]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Wed 2018/02/07 07:27:08 gammu-smsd[1444]: mode: Send=1, Receive=1
+Wed 2018/02/07 07:27:08 gammu-smsd[1444]: deliveryreport = no
+Wed 2018/02/07 07:27:08 gammu-smsd[1444]: phoneid = Modem_1
+Wed 2018/02/07 07:27:10 gammu-smsd[1444]: Error connecting to database!
+Wed 2018/02/07 07:27:10 gammu-smsd[1444]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Wed 2018/02/07 07:27:10 gammu-smsd[1444]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Wed 2018/02/07 08:19:03 gammu-smsd[1424]: Using SQL service
+Wed 2018/02/07 08:19:03 gammu-smsd[1424]: Configuring Gammu SMSD...
+Wed 2018/02/07 08:19:03 gammu-smsd[1424]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Wed 2018/02/07 08:19:03 gammu-smsd[1424]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Wed 2018/02/07 08:19:03 gammu-smsd[1424]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Wed 2018/02/07 08:19:03 gammu-smsd[1424]: mode: Send=1, Receive=1
+Wed 2018/02/07 08:19:03 gammu-smsd[1424]: deliveryreport = no
+Wed 2018/02/07 08:19:03 gammu-smsd[1424]: phoneid = Modem_1
+Wed 2018/02/07 08:19:05 gammu-smsd[1424]: Error connecting to database!
+Wed 2018/02/07 08:19:05 gammu-smsd[1424]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Wed 2018/02/07 08:19:05 gammu-smsd[1424]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Wed 2018/02/07 20:02:25 gammu-smsd[1432]: Using SQL service
+Wed 2018/02/07 20:02:25 gammu-smsd[1432]: Configuring Gammu SMSD...
+Wed 2018/02/07 20:02:25 gammu-smsd[1432]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Wed 2018/02/07 20:02:25 gammu-smsd[1432]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Wed 2018/02/07 20:02:25 gammu-smsd[1432]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Wed 2018/02/07 20:02:25 gammu-smsd[1432]: mode: Send=1, Receive=1
+Wed 2018/02/07 20:02:25 gammu-smsd[1432]: deliveryreport = no
+Wed 2018/02/07 20:02:25 gammu-smsd[1432]: phoneid = Modem_1
+Wed 2018/02/07 20:02:27 gammu-smsd[1432]: Error connecting to database!
+Wed 2018/02/07 20:02:27 gammu-smsd[1432]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Wed 2018/02/07 20:02:27 gammu-smsd[1432]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Wed 2018/02/07 20:54:20 gammu-smsd[1436]: Using SQL service
+Wed 2018/02/07 20:54:20 gammu-smsd[1436]: Configuring Gammu SMSD...
+Wed 2018/02/07 20:54:20 gammu-smsd[1436]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Wed 2018/02/07 20:54:20 gammu-smsd[1436]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Wed 2018/02/07 20:54:20 gammu-smsd[1436]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Wed 2018/02/07 20:54:20 gammu-smsd[1436]: mode: Send=1, Receive=1
+Wed 2018/02/07 20:54:20 gammu-smsd[1436]: deliveryreport = no
+Wed 2018/02/07 20:54:20 gammu-smsd[1436]: phoneid = Modem_1
+Wed 2018/02/07 20:54:22 gammu-smsd[1436]: Error connecting to database!
+Wed 2018/02/07 20:54:22 gammu-smsd[1436]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Wed 2018/02/07 20:54:22 gammu-smsd[1436]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Thu 2018/02/08 20:20:50 gammu-smsd[1432]: Using SQL service
+Thu 2018/02/08 20:20:50 gammu-smsd[1432]: Configuring Gammu SMSD...
+Thu 2018/02/08 20:20:50 gammu-smsd[1432]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Thu 2018/02/08 20:20:50 gammu-smsd[1432]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Thu 2018/02/08 20:20:50 gammu-smsd[1432]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Thu 2018/02/08 20:20:50 gammu-smsd[1432]: mode: Send=1, Receive=1
+Thu 2018/02/08 20:20:50 gammu-smsd[1432]: deliveryreport = no
+Thu 2018/02/08 20:20:50 gammu-smsd[1432]: phoneid = Modem_1
+Thu 2018/02/08 20:20:52 gammu-smsd[1432]: Error connecting to database!
+Thu 2018/02/08 20:20:52 gammu-smsd[1432]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Thu 2018/02/08 20:20:52 gammu-smsd[1432]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Thu 2018/02/08 22:44:28 gammu-smsd[1428]: Using SQL service
+Thu 2018/02/08 22:44:28 gammu-smsd[1428]: Configuring Gammu SMSD...
+Thu 2018/02/08 22:44:28 gammu-smsd[1428]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Thu 2018/02/08 22:44:28 gammu-smsd[1428]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Thu 2018/02/08 22:44:28 gammu-smsd[1428]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Thu 2018/02/08 22:44:28 gammu-smsd[1428]: mode: Send=1, Receive=1
+Thu 2018/02/08 22:44:28 gammu-smsd[1428]: deliveryreport = no
+Thu 2018/02/08 22:44:28 gammu-smsd[1428]: phoneid = Modem_1
+Thu 2018/02/08 22:44:30 gammu-smsd[1428]: Error connecting to database!
+Thu 2018/02/08 22:44:30 gammu-smsd[1428]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Thu 2018/02/08 22:44:30 gammu-smsd[1428]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Fri 2018/02/09 15:11:34 gammu-smsd[1512]: Using SQL service
+Fri 2018/02/09 15:11:34 gammu-smsd[1512]: Configuring Gammu SMSD...
+Fri 2018/02/09 15:11:34 gammu-smsd[1512]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Fri 2018/02/09 15:11:34 gammu-smsd[1512]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Fri 2018/02/09 15:11:34 gammu-smsd[1512]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Fri 2018/02/09 15:11:34 gammu-smsd[1512]: mode: Send=1, Receive=1
+Fri 2018/02/09 15:11:34 gammu-smsd[1512]: deliveryreport = no
+Fri 2018/02/09 15:11:34 gammu-smsd[1512]: phoneid = Modem_1
+Fri 2018/02/09 15:11:36 gammu-smsd[1512]: Error connecting to database!
+Fri 2018/02/09 15:11:36 gammu-smsd[1512]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Fri 2018/02/09 15:11:36 gammu-smsd[1512]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Fri 2018/02/09 19:11:07 gammu-smsd[1448]: Using SQL service
+Fri 2018/02/09 19:11:07 gammu-smsd[1448]: Configuring Gammu SMSD...
+Fri 2018/02/09 19:11:07 gammu-smsd[1448]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Fri 2018/02/09 19:11:07 gammu-smsd[1448]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Fri 2018/02/09 19:11:07 gammu-smsd[1448]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Fri 2018/02/09 19:11:07 gammu-smsd[1448]: mode: Send=1, Receive=1
+Fri 2018/02/09 19:11:07 gammu-smsd[1448]: deliveryreport = no
+Fri 2018/02/09 19:11:07 gammu-smsd[1448]: phoneid = Modem_1
+Fri 2018/02/09 19:11:09 gammu-smsd[1448]: Error connecting to database!
+Fri 2018/02/09 19:11:09 gammu-smsd[1448]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Fri 2018/02/09 19:11:09 gammu-smsd[1448]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Fri 2018/02/09 20:38:19 gammu-smsd[1452]: Using SQL service
+Fri 2018/02/09 20:38:19 gammu-smsd[1452]: Configuring Gammu SMSD...
+Fri 2018/02/09 20:38:19 gammu-smsd[1452]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Fri 2018/02/09 20:38:19 gammu-smsd[1452]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Fri 2018/02/09 20:38:19 gammu-smsd[1452]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Fri 2018/02/09 20:38:19 gammu-smsd[1452]: mode: Send=1, Receive=1
+Fri 2018/02/09 20:38:19 gammu-smsd[1452]: deliveryreport = no
+Fri 2018/02/09 20:38:19 gammu-smsd[1452]: phoneid = Modem_1
+Fri 2018/02/09 20:38:21 gammu-smsd[1452]: Error connecting to database!
+Fri 2018/02/09 20:38:21 gammu-smsd[1452]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Fri 2018/02/09 20:38:21 gammu-smsd[1452]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sat 2018/02/10 09:19:02 gammu-smsd[1476]: Using SQL service
+Sat 2018/02/10 09:19:02 gammu-smsd[1476]: Configuring Gammu SMSD...
+Sat 2018/02/10 09:19:02 gammu-smsd[1476]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sat 2018/02/10 09:19:02 gammu-smsd[1476]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sat 2018/02/10 09:19:02 gammu-smsd[1476]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sat 2018/02/10 09:19:02 gammu-smsd[1476]: mode: Send=1, Receive=1
+Sat 2018/02/10 09:19:02 gammu-smsd[1476]: deliveryreport = no
+Sat 2018/02/10 09:19:02 gammu-smsd[1476]: phoneid = Modem_1
+Sat 2018/02/10 09:19:03 gammu-smsd[1476]: Error connecting to database!
+Sat 2018/02/10 09:19:03 gammu-smsd[1476]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sat 2018/02/10 09:19:03 gammu-smsd[1476]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sat 2018/02/10 09:19:05 gammu-smsd[1476]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Sat 2018/02/10 09:38:11 gammu-smsd[1468]: Using SQL service
+Sat 2018/02/10 09:38:11 gammu-smsd[1468]: Configuring Gammu SMSD...
+Sat 2018/02/10 09:38:11 gammu-smsd[1468]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sat 2018/02/10 09:38:11 gammu-smsd[1468]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sat 2018/02/10 09:38:11 gammu-smsd[1468]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sat 2018/02/10 09:38:11 gammu-smsd[1468]: mode: Send=1, Receive=1
+Sat 2018/02/10 09:38:11 gammu-smsd[1468]: deliveryreport = no
+Sat 2018/02/10 09:38:11 gammu-smsd[1468]: phoneid = Modem_1
+Sat 2018/02/10 09:38:13 gammu-smsd[1468]: Error connecting to database!
+Sat 2018/02/10 09:38:13 gammu-smsd[1468]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sat 2018/02/10 09:38:13 gammu-smsd[1468]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sat 2018/02/10 09:38:14 gammu-smsd[1468]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Sat 2018/02/10 09:49:53 gammu-smsd[1424]: Using SQL service
+Sat 2018/02/10 09:49:53 gammu-smsd[1424]: Configuring Gammu SMSD...
+Sat 2018/02/10 09:49:53 gammu-smsd[1424]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sat 2018/02/10 09:49:53 gammu-smsd[1424]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sat 2018/02/10 09:49:53 gammu-smsd[1424]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sat 2018/02/10 09:49:53 gammu-smsd[1424]: mode: Send=1, Receive=1
+Sat 2018/02/10 09:49:53 gammu-smsd[1424]: deliveryreport = no
+Sat 2018/02/10 09:49:53 gammu-smsd[1424]: phoneid = Modem_1
+Sat 2018/02/10 09:49:56 gammu-smsd[1424]: Error connecting to database!
+Sat 2018/02/10 09:49:56 gammu-smsd[1424]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sat 2018/02/10 09:49:56 gammu-smsd[1424]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sat 2018/02/10 09:49:56 gammu-smsd[1424]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Sat 2018/02/10 20:19:09 gammu-smsd[1388]: Using SQL service
+Sat 2018/02/10 20:19:09 gammu-smsd[1388]: Configuring Gammu SMSD...
+Sat 2018/02/10 20:19:09 gammu-smsd[1388]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sat 2018/02/10 20:19:09 gammu-smsd[1388]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sat 2018/02/10 20:19:09 gammu-smsd[1388]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sat 2018/02/10 20:19:09 gammu-smsd[1388]: mode: Send=1, Receive=1
+Sat 2018/02/10 20:19:09 gammu-smsd[1388]: deliveryreport = no
+Sat 2018/02/10 20:19:09 gammu-smsd[1388]: phoneid = Modem_1
+Sat 2018/02/10 20:19:11 gammu-smsd[1388]: Error connecting to database!
+Sat 2018/02/10 20:19:11 gammu-smsd[1388]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sat 2018/02/10 20:19:11 gammu-smsd[1388]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sat 2018/02/10 20:19:11 gammu-smsd[1388]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Sat 2018/02/10 23:24:05 gammu-smsd[1444]: Using SQL service
+Sat 2018/02/10 23:24:05 gammu-smsd[1444]: Configuring Gammu SMSD...
+Sat 2018/02/10 23:24:05 gammu-smsd[1444]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sat 2018/02/10 23:24:05 gammu-smsd[1444]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sat 2018/02/10 23:24:05 gammu-smsd[1444]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sat 2018/02/10 23:24:05 gammu-smsd[1444]: mode: Send=1, Receive=1
+Sat 2018/02/10 23:24:05 gammu-smsd[1444]: deliveryreport = no
+Sat 2018/02/10 23:24:05 gammu-smsd[1444]: phoneid = Modem_1
+Sat 2018/02/10 23:24:08 gammu-smsd[1444]: Error connecting to database!
+Sat 2018/02/10 23:24:08 gammu-smsd[1444]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sat 2018/02/10 23:24:08 gammu-smsd[1444]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sat 2018/02/10 23:24:08 gammu-smsd[1444]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Sun 2018/02/11 15:01:45 gammu-smsd[1392]: Using SQL service
+Sun 2018/02/11 15:01:45 gammu-smsd[1392]: Configuring Gammu SMSD...
+Sun 2018/02/11 15:01:45 gammu-smsd[1392]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sun 2018/02/11 15:01:45 gammu-smsd[1392]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sun 2018/02/11 15:01:45 gammu-smsd[1392]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sun 2018/02/11 15:01:45 gammu-smsd[1392]: mode: Send=1, Receive=1
+Sun 2018/02/11 15:01:45 gammu-smsd[1392]: deliveryreport = no
+Sun 2018/02/11 15:01:45 gammu-smsd[1392]: phoneid = Modem_1
+Sun 2018/02/11 15:01:47 gammu-smsd[1392]: Error connecting to database!
+Sun 2018/02/11 15:01:47 gammu-smsd[1392]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sun 2018/02/11 15:01:48 gammu-smsd[1392]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sun 2018/02/11 15:01:48 gammu-smsd[1392]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Sun 2018/02/11 15:04:38 gammu-smsd[1432]: Using SQL service
+Sun 2018/02/11 15:04:38 gammu-smsd[1432]: Configuring Gammu SMSD...
+Sun 2018/02/11 15:04:38 gammu-smsd[1432]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sun 2018/02/11 15:04:38 gammu-smsd[1432]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sun 2018/02/11 15:04:38 gammu-smsd[1432]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sun 2018/02/11 15:04:38 gammu-smsd[1432]: mode: Send=1, Receive=1
+Sun 2018/02/11 15:04:38 gammu-smsd[1432]: deliveryreport = no
+Sun 2018/02/11 15:04:38 gammu-smsd[1432]: phoneid = Modem_1
+Sun 2018/02/11 15:04:41 gammu-smsd[1432]: Error connecting to database!
+Sun 2018/02/11 15:04:41 gammu-smsd[1432]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sun 2018/02/11 15:04:41 gammu-smsd[1432]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sun 2018/02/11 15:04:41 gammu-smsd[1432]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Sun 2018/02/11 15:07:38 gammu-smsd[1432]: Using SQL service
+Sun 2018/02/11 15:07:38 gammu-smsd[1432]: Configuring Gammu SMSD...
+Sun 2018/02/11 15:07:38 gammu-smsd[1432]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sun 2018/02/11 15:07:38 gammu-smsd[1432]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sun 2018/02/11 15:07:38 gammu-smsd[1432]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sun 2018/02/11 15:07:38 gammu-smsd[1432]: mode: Send=1, Receive=1
+Sun 2018/02/11 15:07:38 gammu-smsd[1432]: deliveryreport = no
+Sun 2018/02/11 15:07:38 gammu-smsd[1432]: phoneid = Modem_1
+Sun 2018/02/11 15:07:41 gammu-smsd[1432]: Error connecting to database!
+Sun 2018/02/11 15:07:41 gammu-smsd[1432]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sun 2018/02/11 15:07:41 gammu-smsd[1432]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sun 2018/02/11 15:07:41 gammu-smsd[1432]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Mon 2018/02/12 12:09:07 gammu-smsd[1376]: Using SQL service
+Mon 2018/02/12 12:09:07 gammu-smsd[1376]: Configuring Gammu SMSD...
+Mon 2018/02/12 12:09:07 gammu-smsd[1376]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Mon 2018/02/12 12:09:07 gammu-smsd[1376]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Mon 2018/02/12 12:09:07 gammu-smsd[1376]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Mon 2018/02/12 12:09:07 gammu-smsd[1376]: mode: Send=1, Receive=1
+Mon 2018/02/12 12:09:07 gammu-smsd[1376]: deliveryreport = no
+Mon 2018/02/12 12:09:07 gammu-smsd[1376]: phoneid = Modem_1
+Mon 2018/02/12 12:09:09 gammu-smsd[1376]: Error connecting to database!
+Mon 2018/02/12 12:09:09 gammu-smsd[1376]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Mon 2018/02/12 12:09:09 gammu-smsd[1376]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Mon 2018/02/12 12:09:09 gammu-smsd[1376]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Tue 2018/02/13 17:39:57 gammu-smsd[1380]: Using SQL service
+Tue 2018/02/13 17:39:57 gammu-smsd[1380]: Configuring Gammu SMSD...
+Tue 2018/02/13 17:39:57 gammu-smsd[1380]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Tue 2018/02/13 17:39:57 gammu-smsd[1380]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Tue 2018/02/13 17:39:57 gammu-smsd[1380]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Tue 2018/02/13 17:39:57 gammu-smsd[1380]: mode: Send=1, Receive=1
+Tue 2018/02/13 17:39:57 gammu-smsd[1380]: deliveryreport = no
+Tue 2018/02/13 17:39:57 gammu-smsd[1380]: phoneid = Modem_1
+Tue 2018/02/13 17:40:00 gammu-smsd[1380]: Error connecting to database!
+Tue 2018/02/13 17:40:00 gammu-smsd[1380]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Tue 2018/02/13 17:40:00 gammu-smsd[1380]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Tue 2018/02/13 17:40:00 gammu-smsd[1380]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Wed 2018/02/14 02:01:04 gammu-smsd[1384]: Using SQL service
+Wed 2018/02/14 02:01:04 gammu-smsd[1384]: Configuring Gammu SMSD...
+Wed 2018/02/14 02:01:04 gammu-smsd[1384]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Wed 2018/02/14 02:01:04 gammu-smsd[1384]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Wed 2018/02/14 02:01:04 gammu-smsd[1384]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Wed 2018/02/14 02:01:04 gammu-smsd[1384]: mode: Send=1, Receive=1
+Wed 2018/02/14 02:01:04 gammu-smsd[1384]: deliveryreport = no
+Wed 2018/02/14 02:01:04 gammu-smsd[1384]: phoneid = Modem_1
+Wed 2018/02/14 02:01:06 gammu-smsd[1384]: Error connecting to database!
+Wed 2018/02/14 02:01:06 gammu-smsd[1384]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Wed 2018/02/14 02:01:06 gammu-smsd[1384]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Wed 2018/02/14 02:01:06 gammu-smsd[1384]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Thu 2018/02/15 22:35:04 gammu-smsd[1428]: Using SQL service
+Thu 2018/02/15 22:35:04 gammu-smsd[1428]: Configuring Gammu SMSD...
+Thu 2018/02/15 22:35:04 gammu-smsd[1428]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Thu 2018/02/15 22:35:04 gammu-smsd[1428]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Thu 2018/02/15 22:35:04 gammu-smsd[1428]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Thu 2018/02/15 22:35:04 gammu-smsd[1428]: mode: Send=1, Receive=1
+Thu 2018/02/15 22:35:04 gammu-smsd[1428]: deliveryreport = no
+Thu 2018/02/15 22:35:04 gammu-smsd[1428]: phoneid = Modem_1
+Thu 2018/02/15 22:35:06 gammu-smsd[1428]: Error connecting to database!
+Thu 2018/02/15 22:35:06 gammu-smsd[1428]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Thu 2018/02/15 22:35:06 gammu-smsd[1428]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Thu 2018/02/15 22:35:06 gammu-smsd[1428]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Fri 2018/02/16 07:12:37 gammu-smsd[1360]: Using SQL service
+Fri 2018/02/16 07:12:37 gammu-smsd[1360]: Configuring Gammu SMSD...
+Fri 2018/02/16 07:12:37 gammu-smsd[1360]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Fri 2018/02/16 07:12:37 gammu-smsd[1360]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Fri 2018/02/16 07:12:37 gammu-smsd[1360]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Fri 2018/02/16 07:12:37 gammu-smsd[1360]: mode: Send=1, Receive=1
+Fri 2018/02/16 07:12:37 gammu-smsd[1360]: deliveryreport = no
+Fri 2018/02/16 07:12:37 gammu-smsd[1360]: phoneid = Modem_1
+Fri 2018/02/16 07:12:39 gammu-smsd[1360]: Error connecting to database!
+Fri 2018/02/16 07:12:39 gammu-smsd[1360]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Fri 2018/02/16 07:12:39 gammu-smsd[1360]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Fri 2018/02/16 07:12:39 gammu-smsd[1360]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Sat 2018/02/17 17:01:07 gammu-smsd[1388]: Using SQL service
+Sat 2018/02/17 17:01:07 gammu-smsd[1388]: Configuring Gammu SMSD...
+Sat 2018/02/17 17:01:07 gammu-smsd[1388]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sat 2018/02/17 17:01:07 gammu-smsd[1388]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sat 2018/02/17 17:01:07 gammu-smsd[1388]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sat 2018/02/17 17:01:07 gammu-smsd[1388]: mode: Send=1, Receive=1
+Sat 2018/02/17 17:01:07 gammu-smsd[1388]: deliveryreport = no
+Sat 2018/02/17 17:01:07 gammu-smsd[1388]: phoneid = Modem_1
+Sat 2018/02/17 17:01:09 gammu-smsd[1388]: Error connecting to database!
+Sat 2018/02/17 17:01:09 gammu-smsd[1388]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sat 2018/02/17 17:01:09 gammu-smsd[1388]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sat 2018/02/17 17:01:11 gammu-smsd[1388]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Sun 2018/02/18 06:48:12 gammu-smsd[1392]: Using SQL service
+Sun 2018/02/18 06:48:12 gammu-smsd[1392]: Configuring Gammu SMSD...
+Sun 2018/02/18 06:48:12 gammu-smsd[1392]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sun 2018/02/18 06:48:12 gammu-smsd[1392]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sun 2018/02/18 06:48:12 gammu-smsd[1392]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sun 2018/02/18 06:48:12 gammu-smsd[1392]: mode: Send=1, Receive=1
+Sun 2018/02/18 06:48:12 gammu-smsd[1392]: deliveryreport = no
+Sun 2018/02/18 06:48:12 gammu-smsd[1392]: phoneid = Modem_1
+Sun 2018/02/18 06:48:15 gammu-smsd[1392]: Error connecting to database!
+Sun 2018/02/18 06:48:15 gammu-smsd[1392]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sun 2018/02/18 06:48:15 gammu-smsd[1392]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sun 2018/02/18 06:48:16 gammu-smsd[1392]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Sun 2018/02/18 16:35:12 gammu-smsd[1388]: Using SQL service
+Sun 2018/02/18 16:35:12 gammu-smsd[1388]: Configuring Gammu SMSD...
+Sun 2018/02/18 16:35:12 gammu-smsd[1388]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Sun 2018/02/18 16:35:12 gammu-smsd[1388]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Sun 2018/02/18 16:35:12 gammu-smsd[1388]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Sun 2018/02/18 16:35:12 gammu-smsd[1388]: mode: Send=1, Receive=1
+Sun 2018/02/18 16:35:12 gammu-smsd[1388]: deliveryreport = no
+Sun 2018/02/18 16:35:12 gammu-smsd[1388]: phoneid = Modem_1
+Sun 2018/02/18 16:35:14 gammu-smsd[1388]: Error connecting to database!
+Sun 2018/02/18 16:35:14 gammu-smsd[1388]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Sun 2018/02/18 16:35:14 gammu-smsd[1388]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Sun 2018/02/18 16:35:16 gammu-smsd[1388]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
+Mon 2018/02/19 06:50:14 gammu-smsd[1440]: Using SQL service
+Mon 2018/02/19 06:50:14 gammu-smsd[1440]: Configuring Gammu SMSD...
+Mon 2018/02/19 06:50:14 gammu-smsd[1440]: Warning: No PIN code in D:\SIMPADA_BARU\root\simpada_kpu\admin\sms_gateway\bin\win\smsdrc file
+Mon 2018/02/19 06:50:14 gammu-smsd[1440]: CommTimeout=15, SendTimeout=30, ReceiveFrequency=15, ResetFrequency=0, HardResetFrequency=0
+Mon 2018/02/19 06:50:14 gammu-smsd[1440]: checks: CheckSecurity=0, CheckBattery=1, CheckSignal=1
+Mon 2018/02/19 06:50:14 gammu-smsd[1440]: mode: Send=1, Receive=1
+Mon 2018/02/19 06:50:14 gammu-smsd[1440]: deliveryreport = no
+Mon 2018/02/19 06:50:14 gammu-smsd[1440]: phoneid = Modem_1
+Mon 2018/02/19 06:50:16 gammu-smsd[1440]: Error connecting to database!
+Mon 2018/02/19 06:50:16 gammu-smsd[1440]: Error code: 2003, Error: Can't connect to MySQL server on 'localhost' (10061)
+Mon 2018/02/19 06:50:16 gammu-smsd[1440]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Mon 2018/02/19 06:50:17 gammu-smsd[1440]: Failed to start SMSD, Error 3: The system cannot find the path specified.
+
+
