@@ -1,4 +1,5 @@
 <?php
+//error_reporting(0) ;
 //dimana urutan parameternya adalah : mode, format kertas, font size, font, margin left, margin right, margin top, margin bottom, margin header, margin footer, orientasi kertas (bisa diisi dengan p / portrait atau l / landscape).
 
 
@@ -78,6 +79,14 @@ $hp_customer='';
 }
 
 $kasir=$conn->query("select nama, id, id_gudang from user where id='".$faktur['kasir']."'")->fetch_array();
+
+$id_kasir = $faktur['kasir'] ;
+
+//nama outlet ////////////////////////////////////
+$outlet = mysqli_query($conn,"SELECT * FROM `user` INNER JOIN lokasi on user.id_gudang = lokasi.id_lokasi WHERE user.id = $id_kasir ") ;
+/////////////////////////////////
+$nama_outlet = mysqli_fetch_array($outlet) ;
+$ot = $nama_outlet["nama"] ;
 
 $nl=1;
 $loop=$conn->query("select distributor from tabel_trx where no_faktur='$no_faktur' GROUP BY distributor DESC");
@@ -159,6 +168,14 @@ $string .='
     <td>:</td>
     <td>'.$kasir[0].'</td>
   </tr>
+  <tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>Outlet</td>
+  <td>:</td>
+  <td>'.$ot.'</td>
+</tr>
+
 </table>
 ';
 
