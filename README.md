@@ -1,75 +1,24 @@
-AdminBSB - Material Design
-=======================
-[![npm version](https://img.shields.io/npm/v/adminbsb-materialdesign.svg)](https://www.npmjs.com/package/adminbsb-materialdesign)
-![Bower version](https://img.shields.io/bower/v/adminbsb-materialdesign.svg)
+Edit by : Muhammad Ullil Fahri ( www.mfahri.web.id )
 
-**AdminBSB - Material Design is a fully responsive and free admin template.** It was developed with [Bootstrap 3.x Framework](http://getbootstrap.com) and [Google Material Design](https://material.google.com) of powers.
+Catatan :
 
-It's really easy to customize and usage. You can use for from 320px to large resolution pixels of new generation screens and mobile devices. (**Fully Responsive Material Design**)
+Simadu Berjalan pada Linux Dengan XAMPP PHP 5
 
-Looking for Premium Templates or Make Donation?
-----------------
-**If you need more features or if you want to make donation with buying template, please visit portfolio of mine which page link is [https://themeforest.net/user/gurayyarar/portfolio](http://bit.ly/2oPFpmQ)**
-
-Demo
-----------------
-You can check the website preview with **[this link](https://gurayyarar.github.io/AdminBSBMaterialDesign/)**  
-
-![AdminBSB - Free Admin Template With Material Design](https://raw.githubusercontent.com/gurayyarar/AdminBSBMaterialDesign/master/images/screenshot.png)
-
-Installation
-----------------
-You can choose one from multiple ways for installation.
-
-**GitHub**
-- Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
-- Clone to your machine
-```
-git clone https://github.com/gurayyarar/AdminBSBMaterialDesign.git
-```
-
-**npm**
-```
-npm install adminbsb-materialdesign
-```
-
-**bower**
-```
-bower install adminbsb-materialdesign
-```
-
-Documentation
-----------
-Visit the **[documentation](https://gurayyarar.github.io/AdminBSBMaterialDesign/documentation/)**
-
-Browser Support
-----------
-- IE 10 +
-- Microsoft Edge (Latest)
-- Mozilla Firefox (Latest)
-- Google Chrome (Latest)
-- Opera (Latest)
-- Safari (Latest)
-
-Change Logs
-----------
-You can display all release notes with **[this link](https://gurayyarar.github.io/AdminBSBMaterialDesign/pages/changelogs.html)**
+=========================================================
 
 
-FAQ
-===
-**Can I use this template for personal or commercial websites/web projects?**  
-Sure, you can use both of personal and commercial websites/web projects.
+SELECT * FROM `alokasi_stok` INNER JOIN lokasi on alokasi_stok.id_gudang = lokasi.id_lokasi WHERE kode_barang = 'TP0001' 
 
-**Is the attribution link required?**  
-No, not required. (Though very much appreciated)
+==========
 
-License
-----------
-**AdminBSB - Material Design** is an open source project that is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+SELECT DISTINCT(id_gudang) ,nama_barang, SUM(jumlah) as jumlahstok , lokasi.nama FROM `alokasi_stok` INNER JOIN lokasi on alokasi_stok.id_gudang = lokasi.id_lokasi WHERE `kode_barang` LIKE 'SG0002' GROUP BY id_gudang
 
-Donations
-----------
-Donations are **greatly appreciated!**
 
-**[DONATE WITH BUY PREMIUM TEMPLATE](http://bit.ly/2oPFpmQ)**
+SELECT DISTINCT(id_gudang) ,nama_barang, SUM(jumlah) as jumlahstok , lokasi.nama , kode_barang FROM `alokasi_stok` INNER JOIN lokasi on alokasi_stok.id_gudang = lokasi.id_lokasi GROUP BY alokasi_stok.id_gudang , alokasi_stok.kode_barang ORDER BY `alokasi_stok`.`id_gudang` ASC 
+
+SELECT * FROM `tabel_pembelian` INNER JOIN pembelian_sementara on tabel_pembelian.id_pembelian = pembelian_sementara.id_pembelian ORDER BY `tabel_pembelian`.`tgl_nota` DESC 
+
+
+SELECT sum(jumlah) as jumlah FROM `tabel_pembelian` INNER JOIN pembelian_sementara on tabel_pembelian.id_pembelian = pembelian_sementara.id_pembelian WHERE kode_barang = 'SA0003' and tgl_nota = '2019-04-23' ORDER BY `tabel_pembelian`.`tgl_nota` ASC 
+
+sa0003

@@ -30,7 +30,7 @@ define('HOST', 'localhost');
 	$servername = 'localhost';
 	$username = "root";
 	$password = "";
-	$dbname = "siako2";
+	$dbname = "siako";
 	$conn = new mysqli($servername, $username, $password, $dbname);
 	$dbs = new mysqli($servername, $username, $password, $dbname);
 	$pdo = new PDO('mysql:host='.$servername.';dbname='.$dbname, $username, $password);
