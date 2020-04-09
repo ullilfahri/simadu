@@ -1,0 +1,1 @@
+SELECT * FROM `alokasi_stok_jual` WHERE `id_gudang` = 5 AND `kode_barang` LIKE 'sg0002' and jumlah != 0 ORDER BY `alokasi_stok_jual`.`id` DESC

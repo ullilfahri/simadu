@@ -79,3 +79,7 @@ while ($data = $query->fetch_array()) {
 
 
 ?>
+
+SEMEN UB 20 (KG) 
+
+SELECT DISTINCT(kode_barang) as kb , sum(jumlah) as total ,nama_barang FROM `alokasi_stok_jual` WHERE id_gudang = '6' GROUP by kode_barang ORDER BY `total` DESC 
