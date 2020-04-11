@@ -22,3 +22,18 @@ SELECT * FROM `tabel_pembelian` INNER JOIN pembelian_sementara on tabel_pembelia
 SELECT sum(jumlah) as jumlah FROM `tabel_pembelian` INNER JOIN pembelian_sementara on tabel_pembelian.id_pembelian = pembelian_sementara.id_pembelian WHERE kode_barang = 'SA0003' and tgl_nota = '2019-04-23' ORDER BY `tabel_pembelian`.`tgl_nota` ASC 
 
 sa0003
+
+1586525372
+1586453274 sisa 12
+
+
+pembelian dengan akun indv
+
+penjualan dengan kasir
+surat jalan indv
+
+
+untuk retur gunakan admin sinar
+
+retur admin gudag
+

@@ -1,11 +1,11 @@
 <?php
 $tanggal   = date("Y-m-d")  ;
 //$tanggal = "2020-04-02" ;
-
+/*
 header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
 header("Content-type:   application/x-msexcel; charset=utf-8");
 header("Content-Disposition: attachment; filename=Laporan_".$tanggal.".xls"); 
-
+*/
 
 session_start() ;
 include '../../sysconfig.php';
@@ -30,94 +30,66 @@ include '../../sysconfig.php';
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 
 
-<script>
-document.onreadystatechange = function () {
-if (document.readyState === "complete") {
-console.log(document.readyState);
-document.getElementById("PreLoaderBar").style.display = "none";
-}
-}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+(function($){$("html").removeClass("v2");
+$("#header").ready(function(){
+$("#progress-bar").stop().animate({ width: "25%" },1500) });
+$("#footer").ready(function(){
+$("#progress-bar").stop().animate({ width: "75%" },1500) });
+$(window).load(function(){
+$("#progress-bar").stop().animate({ width: "100%" },600,function(){
+$("#loading").fadeOut("fast",function(){
+$(this).remove();
+});
+});
+});
+})(jQuery);
 </script>
 
-<style type="text/css">
-  .progress {
-  position: relative;
-  height: 2px;
-  display: block;
-  width: 100%;
-  background-color: white;
-  border-radius: 2px;
-  background-clip: padding-box;
-  /*margin: 0.5rem 0 1rem 0;*/
-overflow: hidden;
+<style type="text/css" media="all">
+#loading {
+position: fixed;
+z-index: 9999;
+top: 0;
+left: 0;
+width: 100%;
+height: 10px;
+line-height: 350px;
+text-align: center;
+padding-top:70px;
+font:bold 50px Calibri,Arial,Sans-Serif;
+color: #0000ff;
+}
+.v2 #loading {
+display: none
+}
+#progress-bar {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 9999;
+background-color:rgba(0,0,200,0.8);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+filter: alpha(opacity=80);
+opacity: 0.8;
+width: 0;
+height: 10px;
+}
 
-
- }
-  .progress .indeterminate {
-  background-color:black; }
-  .progress .indeterminate:before {
-  content: '';
-  position: absolute;
-  background-color: #2C67B1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  will-change: left, right;
-  -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
-  animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; }
-  .progress .indeterminate:after {
-  content: '';
-  position: absolute;
-  background-color: #2C67B1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  will-change: left, right;
-  -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-  animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-  -webkit-animation-delay: 1.15s;
-animation-delay: 1.15s; }
-
- @-webkit-keyframes indeterminate {
-  0% {
-  left: -35%;
-  right: 100%; }
-  60% {
-  left: 100%;
-  right: -90%; }
-  100% {
-  left: 100%;
-  right: -90%; } }
-  @keyframes indeterminate {
-  0% {
-  left: -35%;
-  right: 100%; }
-  60% {
-  left: 100%;
-  right: -90%; }
-  100% {
-  left: 100%;
-  right: -90%; } }
-  @-webkit-keyframes indeterminate-short {
-  0% {
-  left: -200%;
-  right: 100%; }
-  60% {
-  left: 107%;
-  right: -8%; }
-  100% {
-  left: 107%;
-  right: -8%; } }
-  @keyframes indeterminate-short {
-  0% {
-  left: -200%;
-  right: 100%; }
-  60% {
-  left: 107%;
-  right: -8%; }
-  100% {
-  left: 107%;
-  right: -8%; } }
+#loader {
+top:0;
+left:0;
+width:100%;
+height: 10px;
+position:fixed;
+display: block;
+color:#FFCC66;
+background: #ffffff;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+filter: alpha(opacity=80);
+opacity: 0.8;
+}
 </style>
 
 
@@ -143,9 +115,7 @@ $tp = strtotime(date($hplus1)) ;
 
 ?>
 </h2>
-<div class="progress" id="PreLoaderBar">
-Sedang Download Data
-<div class="indeterminate"></div>
+
 </div>
 <hr>
 <div class="container">
@@ -186,10 +156,7 @@ YANG DIPAKAI
 
             $totaldata = mysqli_num_rows($qstok) ;
             echo "Total Data : ".$totaldata ."<br>";
-            //echo $datake ;
-            $timerrr = $totaldata / 17 / 60 ;
-            echo " ( Perkiraan Download Data : ". number_format($timerrr,0)." Menit ) " ; 
-            echo "<hr>" ;
+            echo $datake ;
             $no = $totaldata ;
 
             while ( $ts = mysqli_fetch_array($qstok)) {

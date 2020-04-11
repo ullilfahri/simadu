@@ -1,11 +1,11 @@
 <?php
 $tanggal   = date("Y-m-d")  ;
-//$tanggal = "2020-04-02" ;
-
+//$tanggal = "2020-02-09" ;
+/*
 header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
 header("Content-type:   application/x-msexcel; charset=utf-8");
 header("Content-Disposition: attachment; filename=Laporan_".$tanggal.".xls"); 
-
+*/
 
 session_start() ;
 include '../../sysconfig.php';
@@ -30,103 +30,9 @@ include '../../sysconfig.php';
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 
 
-<script>
-document.onreadystatechange = function () {
-if (document.readyState === "complete") {
-console.log(document.readyState);
-document.getElementById("PreLoaderBar").style.display = "none";
-}
-}
-</script>
-
-<style type="text/css">
-  .progress {
-  position: relative;
-  height: 2px;
-  display: block;
-  width: 100%;
-  background-color: white;
-  border-radius: 2px;
-  background-clip: padding-box;
-  /*margin: 0.5rem 0 1rem 0;*/
-overflow: hidden;
-
-
- }
-  .progress .indeterminate {
-  background-color:black; }
-  .progress .indeterminate:before {
-  content: '';
-  position: absolute;
-  background-color: #2C67B1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  will-change: left, right;
-  -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
-  animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; }
-  .progress .indeterminate:after {
-  content: '';
-  position: absolute;
-  background-color: #2C67B1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  will-change: left, right;
-  -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-  animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-  -webkit-animation-delay: 1.15s;
-animation-delay: 1.15s; }
-
- @-webkit-keyframes indeterminate {
-  0% {
-  left: -35%;
-  right: 100%; }
-  60% {
-  left: 100%;
-  right: -90%; }
-  100% {
-  left: 100%;
-  right: -90%; } }
-  @keyframes indeterminate {
-  0% {
-  left: -35%;
-  right: 100%; }
-  60% {
-  left: 100%;
-  right: -90%; }
-  100% {
-  left: 100%;
-  right: -90%; } }
-  @-webkit-keyframes indeterminate-short {
-  0% {
-  left: -200%;
-  right: 100%; }
-  60% {
-  left: 107%;
-  right: -8%; }
-  100% {
-  left: 107%;
-  right: -8%; } }
-  @keyframes indeterminate-short {
-  0% {
-  left: -200%;
-  right: 100%; }
-  60% {
-  left: 107%;
-  right: -8%; }
-  100% {
-  left: 107%;
-  right: -8%; } }
-</style>
-
-
-
-
 </head>
 
 <body>
-
 <h1>Laporan Stok Barang</h1>
 <h2>Tanggal : <?php 
 
@@ -143,10 +49,6 @@ $tp = strtotime(date($hplus1)) ;
 
 ?>
 </h2>
-<div class="progress" id="PreLoaderBar">
-Sedang Download Data
-<div class="indeterminate"></div>
-</div>
 <hr>
 <div class="container">
     
@@ -166,7 +68,7 @@ Sedang Download Data
                 <th>Retur Stok Masuk Alokasi</th>
                 <th>Penjualan Stok Keluar Booking ( Kasir )</th>
                 <th>Penjualan Stok Keluar Surat Jalan</th>
-                <th>Stok Akhir <?php echo $tanggal  ?></th>
+                <th>Stok Akhir Manual</th>
                 
                 <th>Nama Gudang</th>
                 
@@ -182,14 +84,11 @@ Sedang Download Data
 YANG DIPAKAI
              $qstok = mysqli_query($conn,"SELECT DISTINCT(id_gudang) ,kode_barang ,nama_barang ,distributor FROM `alokasi_stok` GROUP BY kode_barang ,id_gudang ORDER BY `alokasi_stok`.`kode_barang` ASC ") ;
         */
-            $qstok = mysqli_query($conn,"SELECT DISTINCT(id_gudang) ,kode_barang ,nama_barang ,distributor FROM `alokasi_stok` GROUP BY kode_barang ,id_gudang ORDER BY `alokasi_stok`.`kode_barang` ASC  ") ;
+            $qstok = mysqli_query($conn,"SELECT DISTINCT(id_gudang) ,kode_barang ,nama_barang ,distributor FROM `alokasi_stok` where kode_barang = 'SA0003' GROUP BY kode_barang ,id_gudang ORDER BY `alokasi_stok`.`kode_barang` ASC ") ;
 
             $totaldata = mysqli_num_rows($qstok) ;
             echo "Total Data : ".$totaldata ."<br>";
-            //echo $datake ;
-            $timerrr = $totaldata / 17 / 60 ;
-            echo " ( Perkiraan Download Data : ". number_format($timerrr,0)." Menit ) " ; 
-            echo "<hr>" ;
+            echo $datake ;
             $no = $totaldata ;
 
             while ( $ts = mysqli_fetch_array($qstok)) {
@@ -245,22 +144,13 @@ YANG DIPAKAI
                 </td>
                 <td><?php
                 //retur stok masuk
-                    
+                    /*
                     $qreturmasuk = mysqli_query($conn,"SELECT sum(jumlah_barang) as jumlah_barang FROM `tabel_retur` WHERE `kode_barang` LIKE '$kode_barang' and tanggal like '%$tanggal%' and gudang_tujuan = '$id_gudang' ORDER BY `tabel_retur`.`id` DESC ") ;
                     $tretusmasuk = mysqli_fetch_array($qreturmasuk) ;
                     echo $tretusmasuk["jumlah_barang"] ;
-                    
+                    */
                 ?></td>
-                <td>
-
-                        <?php
-                   //retur alokasi
-                   $qreturmasuk = mysqli_query($conn,"SELECT sum(is_alokasi) as jumlah_barang_alokasi FROM `tabel_retur` WHERE `kode_barang` LIKE '$kode_barang' and tanggal like '%$tanggal%' and gudang_tujuan = '$id_gudang' ORDER BY `tabel_retur`.`id` DESC ") ;
-                   $tretusmasuk = mysqli_fetch_array($qreturmasuk) ;
-                   echo $tretusmasuk["jumlah_barang_alokasi"] ;
-                        ?>
-
-                </td>
+                <td></td>
                 <td><?php
                 //penjualan booking dari kasir
 
@@ -275,28 +165,14 @@ YANG DIPAKAI
                 ?></td>
                 <td>
                     <?php
-                    //barang keluar alokasi
+                    //barang keluar
                     $qbarangkeluar = mysqli_query($conn,"SELECT sum(is_ambil) as barangkeluar FROM `barang_keluar` WHERE `kode_barang` LIKE '$kode_barang' and id_gudang = '$id_gudang' and no_faktur BETWEEN '$th1' and '$tp' ") ;
                     $tbarangkeluar = mysqli_fetch_array($qbarangkeluar) ;
                     echo $tbarangkeluar["barangkeluar"] ;
 
 
                 ?></td>
-                <td>
-                    <?php
-                //echo total stok
-                   //stok awal beulum dibuat 
-
-                   $pembelianstokmasuk = $tbarangmasuk["totalbarangmasuk"] ;
-                   $returalokasi = $tretusmasuk["jumlah_barang_alokasi"] ;
-                   
-                    $pejualanalokasi = $tbarangkeluar["barangkeluar"] ; 
-
-                    $totalstok = $pembelianstokmasuk + $returalokasi + $pejualanalokasi ;
-                    echo $totalstok ;
-
-                    ?>
-                </td>
+                <td></td>
                 
                 <td><?php 
                 //idgudang
