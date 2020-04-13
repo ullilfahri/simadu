@@ -8,11 +8,11 @@ $tanggal = mysqli_real_escape_string($conn,$_GET["t"]) ;
 //$tanggal = "2020-04-10" ;
 
 
-/*
+
 header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
 header("Content-type:   application/x-msexcel; charset=utf-8");
 header("Content-Disposition: attachment; filename=Laporan_".$tanggal.".xls"); 
-*/
+
 
 
 
@@ -194,7 +194,7 @@ YANG DIPAKAI
 
               $qstok = mysqli_query($conn,"SELECT DISTINCT(id_gudang) ,kode_barang ,nama_barang ,distributor FROM `alokasi_stok` GROUP BY kode_barang ,id_gudang ORDER BY `alokasi_stok`.`kode_barang` ASC  ") ;
         */
-            $qstok = mysqli_query($conn,"SELECT DISTINCT(id_gudang) ,kode_barang ,nama_barang ,distributor FROM `alokasi_stok` where kode_barang = 'SA0003' GROUP BY kode_barang ,id_gudang ORDER BY `alokasi_stok`.`kode_barang` ASC  ") ;
+            $qstok = mysqli_query($conn,"SELECT DISTINCT(id_gudang) ,kode_barang ,nama_barang ,distributor FROM `alokasi_stok`  GROUP BY kode_barang ,id_gudang ORDER BY `alokasi_stok`.`kode_barang` ASC  ") ;
 
             $totaldata = mysqli_num_rows($qstok) ;
             echo "Total Data : ".$totaldata ."<br>";
