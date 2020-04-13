@@ -7,7 +7,6 @@ $tanggal = mysqli_real_escape_string($conn,$_GET["t"]) ;
 //$tanggal   = date("Y-m-d")  ;
 //$tanggal = "2020-04-10" ;
 
-
 header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
 header("Content-type:   application/x-msexcel; charset=utf-8");
 header("Content-Disposition: attachment; filename=Laporan_".$tanggal.".xls"); 
@@ -22,7 +21,7 @@ header("Content-Disposition: attachment; filename=Laporan_".$tanggal.".xls");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php // flush() ?>
+    <?php flush() ?>
   <title>Laporan Stok Barang</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">

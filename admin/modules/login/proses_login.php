@@ -8,8 +8,10 @@ session_start();
 
 		//membuat sesi jadi 0
 
+		
 		$conn->query("UPDATE `user` SET `limit_sesi` = '0' WHERE user.limit_sesi = '1'") ;
 		
+
 		$result=$conn->query("select * from user where BINARY username='$username' and password='$password' ");
 		$data=$result->fetch_assoc();
 		if($result->num_rows == 0) {

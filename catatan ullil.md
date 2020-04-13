@@ -37,3 +37,26 @@ untuk retur gunakan admin sinar
 
 retur admin gudag
 
+
+==========================================
+
+1. Pembelian
+Pembelian barang dengan akun distributor indv
+contoh barang sa0003 SEMEN ACIAN TR30 @40KG
+
+2. Penjualan 
+Oleh Kasir ( Booking Barang)
+user kasirsinar 
+1586574158
+
+Barang keluar Oleh admingudang 
+gudangsinar
+
+        enty pengambilran barang , masukan faktur
+
+
+3. Retur Barag
+retur pada adminsinar
+masukan no faktur
+
+alokasi retur gudangsinar
