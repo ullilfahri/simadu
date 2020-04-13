@@ -8,6 +8,7 @@ $tanggal = mysqli_real_escape_string($conn,$_GET["t"]) ;
 //$tanggal = "2020-04-10" ;
 
 
+
 header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
 header("Content-type:   application/x-msexcel; charset=utf-8");
 header("Content-Disposition: attachment; filename=Laporan_".$tanggal.".xls"); 
@@ -298,17 +299,27 @@ YANG DIPAKAI
                /*     
                 $qkasir = mysqli_query($conn,"SELECT SUM(jumlah) AS totalpenjualan FROM `tabel_trx` WHERE kode_barang = '$kode_barang' AND id_gudang = '$id_gudang' and `no_faktur` BETWEEN '$th1' and '$tp' ") ;
                     */
+
+                    $qbarangkeluar = mysqli_query($conn,"SELECT sum(is_ambil) as barangkeluar FROM `barang_keluar` WHERE `kode_barang` LIKE '$kode_barang' and id_gudang = '$id_gudang' and tanggal like '%$tanggal%'") ;
+                  
+                  
+                    $tbarangkeluar = mysqli_fetch_array($qbarangkeluar) ;
+
                     $qkasir = mysqli_query($conn,"SELECT sum(jumlah) as totalpenjualan FROM `barang_keluar` WHERE `kode_barang` LIKE '$kode_barang' and id_gudang = '$id_gudang' and tanggal like '%$tanggal%' ") ;
 
                 $tkasir = mysqli_fetch_array($qkasir) ;
-                echo $tkasir["totalpenjualan"] ;
+                echo $tkasir["totalpenjualan"] - $tbarangkeluar["barangkeluar"] ;
                 
                 ?></td>
                 <td>
                     <?php
                     //barang keluar alokasi
+                /*
                     $qbarangkeluar = mysqli_query($conn,"SELECT sum(is_ambil) as barangkeluar FROM `barang_keluar` WHERE `kode_barang` LIKE '$kode_barang' and id_gudang = '$id_gudang' and tanggal like '%$tanggal%'") ;
+                  
+                  
                     $tbarangkeluar = mysqli_fetch_array($qbarangkeluar) ;
+                  */  
                     echo $tbarangkeluar["barangkeluar"] ;
 
 
