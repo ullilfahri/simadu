@@ -8,10 +8,11 @@ $tanggal = mysqli_real_escape_string($conn,$_GET["t"]) ;
 //$tanggal = "2020-04-10" ;
 
 
-
+/*
 header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
 header("Content-type:   application/x-msexcel; charset=utf-8");
 header("Content-Disposition: attachment; filename=Laporan_".$tanggal.".xls"); 
+*/
 
 
 
@@ -181,7 +182,10 @@ Sedang Download Data
         <tbody>
 
         <?php 
+        //mengambil data stok lama
 
+
+        //////////////////////
             /*
             $qstok = mysqli_query($conn,"SELECT DISTINCT(id_gudang), SUM(jumlah) as total ,kode_barang ,nama_barang ,distributor FROM `alokasi_stok` GROUP BY kode_barang ,id_gudang HAVING SUM(jumlah) != 0 ORDER BY `alokasi_stok`.`kode_barang` ASC") ;
 
@@ -190,7 +194,7 @@ YANG DIPAKAI
 
               $qstok = mysqli_query($conn,"SELECT DISTINCT(id_gudang) ,kode_barang ,nama_barang ,distributor FROM `alokasi_stok` GROUP BY kode_barang ,id_gudang ORDER BY `alokasi_stok`.`kode_barang` ASC  ") ;
         */
-            $qstok = mysqli_query($conn,"SELECT DISTINCT(id_gudang) ,kode_barang ,nama_barang ,distributor FROM `alokasi_stok` GROUP BY kode_barang ,id_gudang ORDER BY `alokasi_stok`.`kode_barang` ASC  ") ;
+            $qstok = mysqli_query($conn,"SELECT DISTINCT(id_gudang) ,kode_barang ,nama_barang ,distributor FROM `alokasi_stok` where kode_barang = 'SA0003' GROUP BY kode_barang ,id_gudang ORDER BY `alokasi_stok`.`kode_barang` ASC  ") ;
 
             $totaldata = mysqli_num_rows($qstok) ;
             echo "Total Data : ".$totaldata ."<br>";
@@ -206,6 +210,9 @@ YANG DIPAKAI
                 //$datake = $no-- ;
                 //echo substr($datake,-4 ) ;
                // echo "." ;
+
+   
+
         ?>      
             <tr>
                
@@ -222,22 +229,48 @@ YANG DIPAKAI
                 ?></td>
                
                 <td><?php
+
+                 //mengambil data stok lama dan di kurangi tanggal H-1
+
+                 $tglcari = strtotime(date($tanggal)) ;
+                 $qtglx = mysqli_query($conn,"SELECT * FROM `stok_awal` WHERE kode_barang = '$kode_barang' and id_gudang = '$id_gudang' ORDER BY `stok_awal`.`tanggal` DESC limit 0,1 ")   ;
+
+                 $tglx = mysqli_fetch_array($qtglx)   ;
+                 $tgldatabase = strtotime(date($tglx["tanggal"])) ;
+                 $stx = $tglx["stok"] ;
+
+                 if($tglcari > $tgldatabase) 
+                 {
+                     //simpan ke stok h-1
+
+                     mysqli_query($conn,"INSERT INTO `stok_awal` (`id_stok_awal`, `tanggal`, `kode_barang`, `id_gudang`, `stok`) VALUES (NULL, '$hmin1', '$kode_barang', '$id_gudang', '$stx');") ;
+                 }
+
+
+                ///////////////////////////////////////////
+                     
                 //stok awak H-1
-                   $qstokawal = mysqli_query($conn,"SELECT * FROM `stok_awal` WHERE tanggal = '$hmin1' and kode_barang = '$kode_barang' and id_gudang = '$id_gudang' ") ;
+                $qstokawal = mysqli_query($conn,"SELECT * FROM `stok_awal` WHERE tanggal = '$hmin1' and kode_barang = '$kode_barang' and id_gudang = '$id_gudang' ") ;
                    $tstokawal = mysqli_fetch_array($qstokawal) ;
-                    $tsa = $tstokawal["stok"] ;
-                    //echo $tsa ;
-                if($tsa != "" or $tsa != 0 ) {
-                    $sisanye = $tsa ;
-                }
-                else
-                {
-                    $sisanye = 0 ;
-                }
+                        $tsa = $tstokawal["stok"] ;
+                        //echo $tsa ;
+                            if($tsa != "" or $tsa != 0 ) {
+                                $sisanye = $tsa ;
+                            }
+                            else
+                            {
+
+
+
+                                $sisanye = "Stok Awal Tidak Diketahui<br><a href='http://localhost/simadu/update/stok//perbaikan.php?tanggal=".$hmin1."&kode_barang=".$kode_barang."&gudang=".$id_gudang."&cari=lihat+Stok' target='_new'>Perbaiki Stok Awal</a>" ;
+
+                            }
+                            
+                          
+
                 
-                echo $sisanye ;
 
-
+                          echo $sisanye ;
 
                 
                 ?></td>
