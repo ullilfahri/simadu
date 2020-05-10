@@ -17,7 +17,7 @@ include '../../sysconfig.php';
 </head>
 <body>
 <h1>Perbaikan Stok Awal</h1>
-<a href="../../stok3.php">Download Laporan</a>
+<a href="../../../stok3.php">Download Laporan</a>
 
 <hr>
 
