@@ -6,9 +6,6 @@ $tanggal = mysqli_real_escape_string($conn,$_GET["t"]) ;
 $kode_barang = mysqli_real_escape_string($conn,$_GET["kode_barang"]) ;
 
 
-$kode_gudang = mysqli_real_escape_string($conn,$_GET["kode_gudang"]) ;
-
-
 //$tanggal   = date("Y-m-d")  ;
 //$tanggal = "2020-04-10" ;
 
@@ -204,7 +201,7 @@ YANG DIPAKAI
 
               $qstok = mysqli_query($conn,"SELECT DISTINCT(id_gudang) ,kode_barang ,nama_barang ,distributor FROM `alokasi_stok` GROUP BY kode_barang ,id_gudang ORDER BY `alokasi_stok`.`kode_barang` ASC  ") ;
         */
-            $qstok = mysqli_query($conn,"SELECT DISTINCT(id_gudang) ,kode_barang ,nama_barang ,distributor ,id_gudang FROM `alokasi_stok` where kode_barang like '%$kode_barang%' and id_gudang like '%$kode_gudang%'  GROUP BY kode_barang ,id_gudang ORDER BY `alokasi_stok`.`kode_barang` ASC  ") ;
+            $qstok = mysqli_query($conn,"SELECT DISTINCT(id_gudang) ,kode_barang ,nama_barang ,distributor FROM `alokasi_stok` where kode_barang like '%$kode_barang%' GROUP BY kode_barang ,id_gudang ORDER BY `alokasi_stok`.`kode_barang` ASC  ") ;
 
             $totaldata = mysqli_num_rows($qstok) ;
             echo "Total Data : ".$totaldata ."<br>";
@@ -286,7 +283,7 @@ YANG DIPAKAI
                 ?></td>
                 <td><?php
                 //mengambil stok barag
-                //pembbelian stok masuk
+                
                  
                 $qpembelian = mysqli_query($conn,"SELECT sum(jumlah) as jumlah FROM `tabel_pembelian` INNER JOIN pembelian_sementara on tabel_pembelian.id_pembelian = pembelian_sementara.id_pembelian WHERE kode_barang = '$kode_barang' and tgl_nota = '$tanggal' ORDER BY `tabel_pembelian`.`tgl_nota` ASC ") ;
                 

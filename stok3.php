@@ -5,7 +5,7 @@ include "sysconfig.php" ;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Laporan Stok Simadu</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -25,11 +25,15 @@ include "sysconfig.php" ;
 
 <form method="get" action="update/stok/laporan.php">
 Silahkan Pilih Tanggal Pelaporan : 
-    <input  type="date" name="t">
+    <input  type="date" name="t" required>
 
-    
+    <br>
+    Filter Barang : 
 <select class="js-example-basic-single" name="kode_barang">
  
+
+
+
 <option value="">Semua Barang</option>
 <?php 
         $qbarang = mysqli_query($conn,"SELECT DISTINCT(kode_barang), nama_barang FROM `alokasi_stok` ORDER BY `alokasi_stok`.`nama_barang` ASC ") ;
@@ -41,6 +45,26 @@ Silahkan Pilih Tanggal Pelaporan :
         ?>
 
 </select>
+
+<br>
+
+Filter Gudang : 
+
+<select class="js-example-basic-single" name="kode_gudang">
+ 
+<option value="">Semua Gudang</option>
+<?php 
+        $qlokasi = mysqli_query($conn,"SELECT * FROM `lokasi`") ;
+        while ($tlokasi = mysqli_fetch_array($qlokasi)) {
+   ?>
+    <option value="<?php echo $tlokasi["id_lokasi"] ?>"> <?php echo $tlokasi["nama"] ?></option>
+        <?php 
+        }
+        ?>
+
+</select>
+
+<br>
 
 
 
