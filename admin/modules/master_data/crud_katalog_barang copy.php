@@ -1,6 +1,6 @@
 <?php
 include '../../../sysconfig.php';
-include MDL.'login/session.php';
+//include MDL.'login/session.php';
 
 if (isset($_GET['data'])) :
 $tabel=$_GET['tabel'];
@@ -143,7 +143,7 @@ endif;
 if (isset($_GET['data_stok'])) :
 $tabel=$_GET['tabel'];
 $distributor=$_GET['distributor'];
-$sql=$conn->query("SELECT a.kode_barang, b.jenis_barang, b.merek_barang, a.distributor, b.nama_barang, a.satuan, a.harga_barang, a.sisa_stok, a.level_1, a.level_2, a.level_3, a.id, a.is_aktif , b.user FROM stok_barang AS a LEFT JOIN kode_barang AS b ON a.kode_barang = b.kode_barang where a.distributor = '$distributor' ");
+$sql=$conn->query("SELECT a.kode_barang, b.jenis_barang, b.merek_barang, a.distributor, b.nama_barang, a.satuan, a.harga_barang, a.sisa_stok, a.level_1, a.level_2, a.level_3, a.id, a.is_aktif FROM stok_barang AS a LEFT JOIN kode_barang AS b ON a.kode_barang = b.kode_barang where a.distributor = '$distributor' ");
 ?>
 
                            <div class="table-responsive">
@@ -164,7 +164,7 @@ $sql=$conn->query("SELECT a.kode_barang, b.jenis_barang, b.merek_barang, a.distr
                                             <th>Lv 1</th>
                                             <th>Lv 2</th>
                                             <th>Lv 3</th>
-                                            <th>User Input</th>
+                                            <th>User</th>
                                             <th>Ubah</th>
                                         </tr>
                                     </thead>
@@ -193,11 +193,11 @@ $sql=$conn->query("SELECT a.kode_barang, b.jenis_barang, b.merek_barang, a.distr
                                             <td><?=angka($x[8])?></td>
                                             <td><?=angka($x[9])?></td>
                                             <td><?=angka($x[10])?></td>
-                                            <td> 
+                                            <td><?php 
                                             
-                                            <?=$x[13]?>
+                                            echo "XX" ;
                                             
-                                            </td>
+                                            ?></td>
                                             <td><a href="kode_barang.php?katalog_barang=ubah_data&id=<?=$x[11]?>"><button type="button" class="btn btn-info btn-xs waves-effect">Ubah</button></a></td>
                                         </tr>
                                    <?php endwhile;?>     
@@ -273,7 +273,7 @@ endif;
 
 $userlogen = $_SESSION['adminUsername'] ; 
 
-$masuk=$conn->query("insert into stok_barang(kode_barang, nama_barang, harga_barang, sisa_stok, satuan, distributor, `level_1`, `level_2`, `level_3`  ) VALUES('$kode_barang', '$nama_lengkap','$harga_barang','0', '$akronim', '$distributor', '$level_1', '$level_2', '$level_3'  )");
+$masuk=$conn->query("insert into stok_barang(kode_barang, nama_barang, harga_barang, sisa_stok, satuan, distributor, `level_1`, `level_2`, `level_3` , `user` ) VALUES('$kode_barang', '$nama_lengkap','$harga_barang','0', '$akronim', '$distributor', '$level_1', '$level_2', '$level_3' , '$userlogen' )");
 
 $masuk=$conn->query(" INSERT INTO `kode_barang`(`kode_barang`, `distributor`, `jenis_barang`, `merek_barang`, `nama_barang` , `user`) VALUES('$kode_barang', '$distributor', '$jenis_barang', '$merek_barang', '$nama_barang' , '$userlogen') ");
 

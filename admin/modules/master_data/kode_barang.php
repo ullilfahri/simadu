@@ -94,6 +94,8 @@ $judul='TAMBAH KODE';
                             <h2>
                                 <?=$judul?> BARANG
                             </h2>
+                            <hr>
+                            User login : <?=$_SESSION['adminUsername']?>
                         </div>
                         <div class="body">
                             <form method="post" id="myform" class="form-horizontal js-sweetalert" autocomplete="off" <?=$form?>>

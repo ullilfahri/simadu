@@ -55,7 +55,7 @@ $metode=$_GET['dari_input'];
                     <div class="card">
                         <div class="header">
                             <h2>
-                                TAMBAH KODE BARANG
+                                TAMBAH KODE BARANG 
                             </h2>
                         </div>
                         <div class="body">
